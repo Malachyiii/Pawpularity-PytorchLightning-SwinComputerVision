@@ -1,5 +1,11 @@
 # Pawpularity-PytorchLightning-SwinComputerVision
-This project is my entrance to the Kaggle [Pawpularity](https://www.kaggle.com/c/petfinder-pawpularity-score) competition. It utilizes Pytorch Lightning to fit a 10-Fold Swin Transformer computervision model to predict pet cuteness scores from images.
+This project contains different versions of the notebooks I submitted to the Kaggle [Pawpularity](https://www.kaggle.com/c/petfinder-pawpularity-score) competition. It utilizes Swin Transformer computervision models to predict pet cuteness scores from images.
+
+# Highest Scoring Notebook (Silver Medal, Rank 126/3545, Private Leaderboard RMSE of 17.04)
+
+My highest scoring notebook was based on a 12 model stratified K-Fold structure. 1/3 of the models were fit with mixup, 1/3 with cutmix, and 1/3 with neither. These 12 models than made predictions using test-time augmentation, and the average of the 12 models was the prediction. Though this notebook didn't score well on the public leaderboard, it proved to be highly generalizable when the private leaderboard was released, earning me a silver medal.
+
+# Other Notebooks
 
 ## PyTorch Pawpularity
 
